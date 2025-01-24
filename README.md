@@ -1,1 +1,1 @@
-# (https://charlierosewong.github.io)
+# charlierosewong.github.io
