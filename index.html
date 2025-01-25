@@ -6,7 +6,7 @@
     <title>Charlie Wong</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -20,6 +20,7 @@
         h1 {
             font-size: 3rem;
             color: #333;
+            font-weight: normal;
         }
 
         .overview {
@@ -46,27 +47,53 @@
 
         .links a {
             text-decoration: none;
-            font-size: 1rem;
-            color: #0073e6;
+            font-size: 1.5rem;
+            color: #555;
             transition: color 0.3s;
         }
 
         .links a:hover {
-            color: #005bb5;
+            color: #0073e6;
+        }
+
+        .links i {
+            font-size: 2rem;
+        }
+
+        .contact {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .contact .highlight {
+            color: grey;
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <h1>Charlie Wong</h1>
-    <img src="profile.JPG" alt="Charlie Wong">
+    <img src="profile.jpg" alt="Charlie Wong">
 
     <div class="overview">
-        <p> Hi! My name is Charlie Wong. I am currently a fourth-year Statistics undergraduate student at the University of California Berkeley, a founding machine learning engineer at Mirror Mirror AI, and a researcher at the Gopnik Cognitive Development and Learning Lab.</p>    </div>
+        <p>Hi! My name is Charlie Wong. I am currently a fourth-year Statistics undergraduate student at the University of California Berkeley, a founding machine learning engineer at Mirror Mirror AI, and a researcher at the Gopnik Cognitive Development and Learning Lab.</p>
+    </div>
 
     <div class="links">
-        <a href="https://www.linkedin.com/in/charlie-wong-a6636627/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/charlierosewong" target="_blank">GitHub</a>
-        <a href="mailto:charlieroseewong@berkeley.edu">Email Me</a>
+        <a href="https://www.linkedin.com/in/charlie-wong-a6636627/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/charlierosewong" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <!-- <a href="mailto:your-email@example.com">
+            <i class="fas fa-envelope"></i>
+        </a> -->
+    </div>
+
+    <div class="contact">
+        <p>email me: charlierosewong <span class="highlight">at</span> berkeley <span class="highlight">dot</span> edu</p>
     </div>
 </body>
 </html>
