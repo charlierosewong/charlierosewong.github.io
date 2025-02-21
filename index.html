@@ -32,12 +32,32 @@
             color: #555;
         }
 
-        img {
-            border-radius: 50%;
+        .profile-container {
             width: 150px;
             height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.6); 
+        }
+
+        .profile-container a img {
+            transition: opacity 0.2s ease-in-out;
+        }
+
+        .profile-container a img:hover {
+            opacity: 0.85;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
             object-fit: cover;
-            margin-top: 20px;
+            transform: scale(0.75);
+            transform-origin: center; 
+            display: block;
         }
 
         .links {
@@ -85,10 +105,16 @@
 </head>
 <body>
     <h1>Charlie Wong</h1>
-    <img src="profile.JPG" alt="Charlie Wong">
+    <div class="profile-container">
+        <a href="https://www.charlottelaiphotography.com/" target="_blank">
+            <img src="profile.JPG"
+                 srcset="profile-300px.jpg 2x, profile-450px.jpg 3x"
+                 alt="Charlie Wong">
+        </a>
+    </div>
 
     <div class="overview">
-        <p>Hi! My name is Charlie Wong. I am currently a fourth-year Statistics undergraduate student at the University of California Berkeley, a founding machine learning engineer at Mirror Mirror AI, and a researcher at the Gopnik Cognitive Development and Learning Lab.</p>
+        <p>Hi! My name is Charlie (Chin Jun) Wong. I am currently a fourth-year Statistics undergraduate student at the University of California Berkeley, a founding machine learning engineer at Mirror Mirror AI, and a researcher at the Gopnik Cognitive Development and Learning Lab.</p>
     </div>
 
     <div class="links">
